@@ -1,24 +1,20 @@
-define([
-	'backbone',
-	'communicator',
-	'hbs!tmpl/welcome'
-],
+define( function( require ) {
+	'use strict';
 
-function( Backbone, Communicator, Welcome_tmpl ) {
-    'use strict';
+	var Backbone   = require( 'backbone' );
+	var Marionette = require( 'marionette' );
 
-	var welcomeTmpl = Welcome_tmpl;
-
-	var App = new Backbone.Marionette.Application();
+	var App        = new Marionette.Application();
 
 	/* Add application regions here */
-	App.addRegions({});
+	App.addRegions( {
+		'header'     : '#header',
+		'navigation' : '#navigation',
+		'content'    : '#content-container'
+	} );
 
 	/* Add initializers here */
-	App.addInitializer( function () {
-		document.body.innerHTML = welcomeTmpl({ success: "CONGRATS!" });
-		Communicator.mediator.trigger("APP:START");
-	});
+	App.addInitializer( function() {} );
 
 	return App;
-});
+} );

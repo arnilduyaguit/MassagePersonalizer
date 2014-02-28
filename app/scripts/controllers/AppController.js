@@ -1,10 +1,10 @@
-define([
-	'backbone',
-	'communicator'
-],
-function( Backbone, Communicator ) {
+define( function( require ) {
     'use strict';
 
+    var Backbone = require('backbone');
+    var Marionette = require('marionette');
+    var Communicator = require('communicator');
+  
 	var RegionManager = Backbone.Marionette.Controller.extend({
 
 		initialize: function( options ) {

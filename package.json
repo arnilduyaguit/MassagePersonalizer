@@ -1,7 +1,6 @@
 {
   "name": "massagepersonalizer",
   "version": "0.0.1",
-  
   "dependencies": {
     "express": "~3.2.4",
     "request": "~2.21.0",
@@ -11,7 +10,7 @@
     "express-hbs": "~0.2.0",
     "underscore": "~1.4.4"
   },
-  
+
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.0",

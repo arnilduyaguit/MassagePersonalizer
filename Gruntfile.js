@@ -28,21 +28,17 @@ module.exports = function (grunt) {
 
         // watch list
         watch: {
-            
             compass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass']
             },
-            
             livereload: {
                 files: [
-                    
                     '<%= yeoman.app %>/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/{,**/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,**/}*.js',
                     '{.tmp,<%= yeoman.app %>}/templates/{,**/}*.hbs',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-                    
                     'test/spec/{,**/}*.js'
                 ],
                 tasks: ['exec'],
@@ -77,7 +73,6 @@ module.exports = function (grunt) {
             }
         },
 
-        
         // express app
         express: {
             options: {
@@ -100,7 +95,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
 
         // open app and test page
         open: {
@@ -128,7 +122,6 @@ module.exports = function (grunt) {
             ]
         },
 
-        
         // compass
         compass: {
             options: {
@@ -147,7 +140,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
 
         // require
         requirejs: {
